@@ -7,16 +7,16 @@ import type {
 import { LinkPreset } from './types/config'
 
 export const siteConfig: SiteConfig = {
-  title: 'Mashiro',
-  subtitle: 'My Blog',
+  title: '真城 mashiro',
+  subtitle: '久居则安的小窝',
   lang: 'zh_CN',         // 'en', 'zh_CN', 'zh_TW', 'ja', 'ko'
   themeColor: {
     hue: 55,         // Default hue for the theme color, from 0 to 360. e.g. red: 0, teal: 200, cyan: 250, pink: 345
     fixed: false,     // Hide the theme color picker for visitors
   },
   banner: {
-    enable: false,
-    src: 'assets/images/demo-banner.png',   // Relative to the /src directory. Relative to the /public directory if it starts with '/'
+    enable: true,
+    src: 'assets/images/banner.jpg',   // Relative to the /src directory. Relative to the /public directory if it starts with '/'
     position: 'center',      // Equivalent to object-position, only supports 'top', 'center', 'bottom'. 'center' by default
     credit: {
       enable: false,         // Display the credit text of the banner image
@@ -28,7 +28,16 @@ export const siteConfig: SiteConfig = {
     enable: true,           // Display the table of contents on the right side of the post
     depth: 2                // Maximum heading depth to show in the table, from 1 to 3
   },
-  favicon: [    // Leave this array empty to use the default favicon
+  favicon: [ 
+    //{
+    //  src: '/favicon/32favicon.ico',    // Path of the favicon, relative to the /public directory
+    //  sizes: '32x32',                   // (Optional) Size of the favicon, set only if you have favicons of different sizes
+    //} ,
+    {
+      src: '/favicon/128favicon.ico', 
+      sizes: '128x128',
+    }
+    // Leave this array empty to use the default favicon
     // {
     //   src: '/favicon/icon.png',    // Path of the favicon, relative to the /public directory
     //   theme: 'light',              // (Optional) Either 'light' or 'dark', set only if you have different favicons for light and dark mode
@@ -52,8 +61,8 @@ export const navBarConfig: NavBarConfig = {
 
 export const profileConfig: ProfileConfig = {
   avatar: 'assets/images/avatar.jpg',  // Relative to the /src directory. Relative to the /public directory if it starts with '/'
-  name: 'Mashiro',
-  bio: 'Motto ToLove-Ru',
+  name: '真城 mashiro',
+  bio: '下雨不是任何人的错',
   links: [
     {
       name: 'Twitter',

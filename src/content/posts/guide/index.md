@@ -3,7 +3,7 @@ title: Simple Guides for Fuwari
 published: 2024-04-01
 description: "How to use this blog template."
 image: "./cover.jpeg"
-tags: ["Fuwari", "Blogging", "Customization"]
+tags: ["Fuwari"]
 category: Guides
 draft: false
 ---
@@ -16,13 +16,13 @@ This blog template is built with [Astro](https://astro.build/). For the things t
 
 ```yaml
 ---
-title: My First Blog Post
-published: 2023-09-09
-description: This is the first post of my new Astro blog.
+title: 我的博客标题
+published: 2024-03-09
+description: 文章的一段简介.
 image: ./cover.jpg
-tags: [Foo, Bar]
-category: Front-end
-draft: false
+tags: [Foo, Bar]  //标签
+category: Front-end //文章的分类
+draft: false //草稿
 ---
 ```
 
